@@ -3,7 +3,7 @@
 <Cadastro/>
 <Usuario/>
 
-  </div>
+</div>
 </template>
 
 <script>

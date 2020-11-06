@@ -2,12 +2,12 @@
     <div class="cadastro"> 
         <form action="" id="cadastros" method="post">
        <legend>Cadastro de Produtos</legend>  
-       <p> <label for="cnome">Nome do produto</label>
-        <input type="text" id="cnome"></p>
+       <p><label for="cnome">Nome do produto</label>
+        <input type="text" id="cnome" v-model="nomeProduto"></p>
         <p><label for="cquantidade" >Quantidade</label> 
-        <input type="number" id="cquantidade"></p>
+        <input type="number" id="cquantidade" v-model="qtdProduto"></p>
         <p><label for="cCodigo">Codigo do Produto</label> 
-        <input type="number" id="cCodigo"></p>
+        <input type="number" id="cCodigo" v-model="cdgProduto"></p>
        <p><input type="button" value="Salvar"></p>
        
         </form>
@@ -16,8 +16,12 @@
 <script>
 export default {
     name: "cadastro",
-    components:{
-        
+    data(){
+        return{
+        nomeProduto:'',
+        qtdPdroduto:'',
+        cdgProduto:''
+        }
     }
 }
 </script>
